@@ -43,6 +43,7 @@ section {
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding-top: 60px;
 
   /* Scroll Snap */
   scroll-snap-align: center;
@@ -91,10 +92,12 @@ section {
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
+  font-weight: 400;
 }
 
 #navbar .nav-link:hover{
   color: skyblue;
+  font-weight: 900;
 }
 
 
@@ -102,7 +105,7 @@ section {
   display: none;
 }
 
-#navbar .bar {
+/* #navbar .bar {
   display: block;
   width: 25px;
   height: 3px;
@@ -110,7 +113,7 @@ section {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: orangered;
-}
+} */
 
 
 
@@ -372,10 +375,10 @@ section#section-5 p.required {
   #navbar .nav-menu {
     position: fixed;
     left: -100%;
-    top: 5rem;
+    top: 4rem;
     flex-direction: column;
-    background-color: #fff;
-    width: 100%;
+    background-color: #333;
+    width: 50%;
     border-radius: 10px;
     text-align: center;
     transition: 0.3s;
@@ -383,44 +386,18 @@ section#section-5 p.required {
         0 10px 27px rgba(0, 0, 0, 0.05);
 }
 
-  #navbar .nav-menu.active {
-    left: 0;
-}
+  #navbar .nav-menu.active {    left: 0;}
 
-  #navbar .nav-item {
-    margin: 2.5rem 0;
-}
+  #navbar .nav-item {    margin: 1rem 0;}
 
   #navbar .hamburger {
     display: block;
     cursor: pointer;
+    font-size: 40px;
+    padding: 5px 3px 5px 15px;
+    color: orangered;
 }
-#navbar .hamburger.active .bar:nth-child(2) {
-  opacity: 0;
-}
-
-#navbar .hamburger.active .bar:nth-child(1) {
-  transform: translateY(8px) rotate(45deg);
-}
-
-#navbar .hamburger.active .bar:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg);
-}
-  /* from w3scools */
-  .nav-menu.responsive {
-    position: relative;
-    background: palegreen;
-  }
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
+  #navbar .hamburger.active {  left: 0;}
 
 }
 @media only screen and (max-width: 400px) {
