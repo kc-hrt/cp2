@@ -77,8 +77,34 @@
 
     <!-- Begin Contact -->
     <section id="section-5">
-      <h1>Contact Me</h1>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In tempora minus quod vero temporibus cupiditate facere dolor error nam sunt assumenda, enim magnam at accusantium incidunt est ratione qui ipsam.</p>
+
+      <!-- container for form and title | Contact Me -->
+      <div class="contact-me">
+
+        <h1>Contact Me</h1>
+        
+        <!-- form links to my website for sending using php -->
+        <form action="http://fotohut.org/dvorakAHF/ACA/send.php" method="post" onsubmit="return validation(this);">
+          <p class="required">Name *</p>
+          <input name="FirstName" required="" type="text" />
+          <p>Email</p>
+          <input name="EmailFrom" required="" type="text" />
+          <p class="required">Phone *</p>
+          <input name="Phone" required="" type="text" />
+  
+          <p class="required">Message *</p>
+          <textarea id="Message" name="Message" required="" rows="10"></textarea>
+  
+          <p>How would you like to be contacted?</p>
+          <select name="/contactMethod">
+            <option value="Phone">Phone</option>
+            <option value="Email">Email</option> 
+          </select>
+  
+          <input name="submit" type="submit" value="Submit" />
+        </form>
+
+      </div>
     </section>
     <!-- End Contact -->
     
@@ -96,22 +122,14 @@
     
     function myFunction() {
       var x = document.getElementById("nav-menu");
-    if (x.className === "nav-menu") {
+      if (x.className === "nav-menu") {
         x.className += " responsive";
       } else {
         x.className = "nav-menu";
       }
     }
 
-//     const hamburger = document.querySelector(".hamburger");
-// const navMenu = document.querySelector(".nav-menu");
 
-// hamburger.addEventListener("click", mobileMenu);
-
-// function mobileMenu() {
-//     hamburger.classList.toggle("active");
-//     navMenu.classList.toggle("active");
-// }
     </script>
 </body>
 </html>

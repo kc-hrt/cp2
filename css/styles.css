@@ -139,7 +139,7 @@ section#section-1 .landing {
   background: rgba(255, 255, 255, 0.6) ;
 }
 
-section#section-1  .landing h1 {
+section#section-1 .landing h1 {
   margin: 20px;
   text-align: center;
   padding: 0;
@@ -240,20 +240,82 @@ section#section-4 {
 
 /* Section 5 Styles Begin */
 section#section-5 {
-  height: 100vh;
+  height: 1100px;
+  min-height: 100vh;
   background: blue;
   background: url('/img/Crash-Landing.jpeg') no-repeat center center/cover;;
 
   display: flex;
   width: 100%;
-  
-  flex-direction: column;
+  padding-top: 90px;
+  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
   text-align: center;
 
   /* Scroll Snap */
   scroll-snap-align: center;
+}
+
+section#section-5 .contact-me {
+  display: inline-block;
+  width: 45%;
+  height: auto;
+  /* margin-top: 90px; */
+  margin-left: 50%;
+  padding: 1rem 1rem 1rem 1rem;
+  background: rgba(255, 255, 255, 0.6) ;
+}
+
+section#section-5 .contact-me h1 {
+  color: #333;
+  font-size: 3rem;
+  font-family: "McLaren", serif;
+}
+
+section#section-5 .contact-me p {
+  color: #333;
+  font-size: 1.1rem;
+  font-weight: 400;
+  text-align: left;
+  font-family: "Comfortaa", sans-serif;
+  margin-left: .25em;
+  margin-bottom: .25em;
+}
+
+section#section-5 input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  resize: vertical;
+  font-family: monospace;
+}
+
+section#section-5 input[type=submit] {
+  background-color: #379047;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor:pointer;
+  margin-top: 1rem;
+}
+
+section#section-5 input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+section#section-5 textarea {
+  /* width:480px; */
+}
+
+section#section-5 p.required {
+  font-weight: 900;
+  font-family: "Comfortaa", sans-serif;
 }
 
 /* Section 5 Styles End  */
@@ -301,6 +363,12 @@ section#section-5 {
     width: 100%;
   }
   
+  section#section-5 .contact-me {
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+  }
+
   #navbar .nav-menu {
     position: fixed;
     left: -100%;
@@ -372,6 +440,21 @@ section#section-5 {
     padding-bottom: 30px;
     color: #555;
   }
+
+  section#section-5 .contact-me {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 2em;
+    width: 100%;
+  }
+  section#section-5 .contact-me h1 {
+    font-size: 1.5rem;
+  }
+
+  section#section-5 .contact-me p {
+    font-size: .85rem;
+  }
+
 }
 /* responsive-ness end */
 
