@@ -106,18 +106,6 @@ section {
   display: none;
 }
 
-/* #navbar .bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 10px 10px;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background-color: orangered;
-} */
-
-
-
 /* Navigation Bar Styles End */
 
 
@@ -234,6 +222,7 @@ section#section-3 {
 /* Portfolio Styles Begin */
 section#section-4 {
   height: auto;
+  padding-top: 50px;
   min-height: 100vh;
   background: green;
   display: flex;
@@ -261,13 +250,27 @@ section#section-4 .portfolio-column {
 
 }
 section#section-4 .card {
-  height: 300px;
+  height: 350px;
   top: 50%;
   left: 50%;
+  margin: 5px;
+  border-style: solid;
+  border-color: #333;
+  border-width: 3px;
 }
 
 #text {
+ color: red;
+ font-size: 3rem;
+ display: none;
 
+}
+
+.card:hover #text {
+  color: blue;
+  display: block;
+  top: 50%;
+  left: 50%;
 }
 
 section#section-4 #blue {  
@@ -437,13 +440,13 @@ section#section-5 p.required {
   
   section#section-5 .contact-me { margin-left: 15%; margin-right: 15%; width: 70%;}
 
-  #navbar .nav-menu { position: fixed; left: -100%; top: 4rem; flex-direction: column; background-color: #333; width: 50%; border-radius: 10px; text-align: center;  transition: 0.3s; box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05); }
+  #navbar .nav-menu { position: fixed; left: -100%; top: 4rem; flex-direction: column; background-color: #333; width: 50%; border-radius: 10px; text-align: center;  transition: 0.9s; box-shadow: 0 10px 27px rgba(0, 0, 0, .8); }
   #navbar .nav-menu.active {    left: 0; margin-left: 1rem;}
   #navbar .nav-item {  margin: 1rem 0;}
   #navbar .hamburger {   display: block;   cursor: pointer;   font-size: 30px;   padding: 7px 3px 7px 15px;   color: orangered;}
   #navbar .hamburger.active {  left: 0;}
 
-  section#section-4 {flex: 100%; max-width: 100%; }
+  section#section-4 {flex: 100%; max-width: 100%; padding-bottom: ;}
   section#section-4 .portfolio-column {flex: 100%; max-width: 100%; }
 
 }
@@ -471,6 +474,7 @@ section#section-5 p.required {
     padding-bottom: 30px;
     color: #555;
   }
+  
 
   section#section-5 .contact-me {
     margin-left: 1rem;
