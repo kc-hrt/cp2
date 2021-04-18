@@ -60,6 +60,7 @@ section {
   scroll-behavior: smooth;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
+  
 }
 
 /* Navigation Bar Styles Begin */
@@ -251,27 +252,42 @@ section#section-4 .portfolio-column {
 }
 section#section-4 .card {
   height: 350px;
-  top: 50%;
-  left: 50%;
   margin: 5px;
   border-style: solid;
   border-color: #333;
   border-width: 3px;
+  justify-content: center;
 }
 
 #text {
- color: red;
- font-size: 3rem;
  display: none;
 
 }
 
-.card:hover #text {
-  color: blue;
-  display: block;
-  top: 50%;
-  left: 50%;
+section#section-4 a {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
 }
+
+section#section-4 .card:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.card:hover #text {
+  /* color: red; */
+  display: block;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 900;
+  /* background-color:; */
+  margin-top: 50%;
+  padding: 10px 15px 10px 15px;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  ;
+}
+
 
 section#section-4 #blue {  
   background-color: skyblue;
@@ -317,6 +333,10 @@ section#section-4 #yellow {
 
 
 
+section#section-4 .card:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  display: block;
+}
 
 /* Portfolio Styles End  */
 
@@ -446,7 +466,7 @@ section#section-5 p.required {
   #navbar .hamburger {   display: block;   cursor: pointer;   font-size: 30px;   padding: 7px 3px 7px 15px;   color: orangered;}
   #navbar .hamburger.active {  left: 0;}
 
-  section#section-4 {flex: 100%; max-width: 100%; padding-bottom: ;}
+  section#section-4 {flex: 100%; max-width: 100%; padding-bottom: margin: 3% 10px 5px 7px;}
   section#section-4 .portfolio-column {flex: 100%; max-width: 100%; }
 
 }
