@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Final Project</title>
+  <link rel="stylesheet" type="text/css" href="./css/styles.css">
+  <script src="https://kit.fontawesome.com/61c0275f1d.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=McLaren&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <meta name="viewport" content="width= device-width, initial-scale= 1.0">
+
+</head>
+<body>
+  <div id="container">
+    <!-- start navigation -->
+    <nav id="navbar">
+      
+      <ul class="nav-menu" id="nav-menu">
+        <li class="nav-item"><a href="#section-1" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#section-2" class="nav-link">About Me</a></li>
+        <li class="nav-item"><a href="#section-3" class="nav-link">Resumé</a></li>
+        <li class="nav-item"><a href="#section-4" class="nav-link">Portfolio</a></li>
+        <li class="nav-item"><a href="#section-5" class="nav-link">Contact Me</a></li>
+      </ul>
+      <div class="hamburger">
+        <i class='fas fa-hamburger'></i>
+      </div>
+    </nav>
+    <!-- end of navigation -->
+
+    <!-- Begin Section 1   -->
+    <section id="section-1">
+      <div class="logo">
+        <i class="fab fa-aviato"></i>
+      </div>
+      <div class="landing">
+        <h1>Kasey Hart</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In tempora minus quod vero temporibus cupiditate facere dolor error nam.</p>
+      </div>
+    </section>
+    <!-- End Section 1 -->
+
+
+    <!-- Begin About Me -->
+    <section id="section-2">
+      <div class="about-me-left">
+        <i class='fas fa-snowboarding'></i>
+      </div>
+      <div class="about-me-right">
+        <h1>This is About Me</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In tempora minus quod vero temporibus cupiditate facere dolor error nam sunt assumenda, enim magnam at accusantium incidunt est ratione qui ipsam.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In tempora minus quod vero temporibus cupiditate facere dolor error nam sunt assumenda, enim magnam at accusantium incidunt est ratione qui ipsam.</p>
+      </div>
+    </section>
+    <!-- End About Me -->
+
+
+    <!-- Begin Resumé -->
+    <section id="section-3">
+      <h1>Resumé</h1>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In tempora minus quod vero temporibus cupiditate facere dolor error nam sunt assumenda, enim magnam at accusantium incidunt est ratione qui ipsam.</p>
+    </section>
+    <!-- End Resumé -->
+
+
+    <!-- Begin Portfolio -->
+    <section id="section-4">
+      <h1>Portfolio</h1>
+      
+      <!-- cards for Portfolio -->
+      <div class="portfolio-row">
+        
+        <div class="portfolio-column">
+          
+          <div class="card" id="red">
+              <div id="text">Lorem ipsum</div>
+            </div>
+        </div>
+
+        <div class="portfolio-column">
+          <div class="card" id="yellow">
+            <h2>Title 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-column">
+          <div class="card" id="green">
+            <h2>Title 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="portfolio-row">
+        
+        <div class="portfolio-column">
+          <div class="card" id="blue">
+            <h2>Title 4</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-column">
+          <div class="card" id="orangered">
+            <h2>Title 5</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-column">
+          <div class="card" id="purple">
+            <h2>Title 6</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        </div>
+      
+      
+      
+      
+      <!-- <div class="block-1-1">
+        <h2>Title 1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div> -->
+    </section>
+    <!-- End Portfolio -->
+
+
+    <!-- Begin Contact -->
+    <section id="section-5">
+
+      <!-- container for form and title | Contact Me -->
+      <div class="contact-me">
+
+        <h1>Contact Me</h1>
+        
+        <!-- form links to my website for sending using php -->
+        <form action="http://fotohut.org/dvorakAHF/ACA/send.php" method="post" onsubmit="return validation(this);">
+          <p class="required">Name *</p>
+          <input name="FirstName" required="" type="text" />
+          <p>Email</p>
+          <input name="EmailFrom" required="" type="text" />
+          <p class="required">Phone *</p>
+          <input name="Phone" required="" type="text" />
+  
+          <p class="required">Message *</p>
+          <textarea id="Message" name="Message" required="" rows="10"></textarea>
+  
+          <p>How would you like to be contacted?</p>
+          <select name="/contactMethod">
+            <option value="Phone">Phone</option>
+            <option value="Email">Email</option> 
+          </select>
+  
+          <input name="submit" type="submit" value="Submit" />
+        </form>
+
+      </div>
+    </section>
+    <!-- End Contact -->
+    
+    <!-- Begin Footer -->
+    <footer id="footer">
+      <h1>This is the footer</h1>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In tempora minus quod vero temporibus cupiditate facere dolor error nam sunt assumenda, enim magnam at accusantium incidunt est ratione qui ipsam.</p>
+    </footer>
+    <!-- End Footer -->
+
+  </div>
+  
+  
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.addEventListener("click", mobileMenu);
+
+    function mobileMenu() {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+    }
+    </script>
+</body>
+</html>
