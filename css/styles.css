@@ -20,6 +20,7 @@ body {
   padding: 0;
   font-family: "Comfortaa", sans-serif;
   height: 100vh;
+  overflow: hidden;
 }
 
 h1 {
@@ -137,6 +138,14 @@ section#section-1 {
   scroll-snap-align: center;
 }
 
+#section-1 .logo {
+  display: block;
+  cursor: pointer;
+  font-size: 20rem;
+  /* padding: 7px 3px 7px 15px; */
+  color: white;
+}
+
 section#section-1 .landing {
   width: 600px;  
   background: rgba(255, 255, 255, 0.6) ;
@@ -222,9 +231,10 @@ section#section-3 {
 /* Resumé Styles End  */
 
 
-/*  Styles Begin */
+/* Portfolio Styles Begin */
 section#section-4 {
-  height: 100vh;
+  height: auto;
+  min-height: 100vh;
   background: green;
   display: flex;
   width: 100%;
@@ -238,12 +248,79 @@ section#section-4 {
   scroll-snap-align: center;
 }
 
-/*  Styles End  */
+section#section-4 .portfolio-row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+section#section-4 .portfolio-column {
+  flex: 33%;
+  max-width: 33%;
+  flex-direction: column;
+
+}
+section#section-4 .card {
+  height: 300px;
+  top: 50%;
+  left: 50%;
+}
+
+#text {
+
+}
+
+section#section-4 #blue {  
+  background-color: skyblue;
+  background-image: url(/img/calc-app.png); 
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section#section-4 #orangered {  
+  background-color: orangered;
+  background-image: url(/img/red-resume.png); 
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section#section-4 #purple {  
+  background-color: purple;
+  background-image: url(/img/tic-tack-toe.png); 
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section#section-4 #red {  
+  background-color: red; 
+  background-image: url(/img/urban-cutz.png); 
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section#section-4 #green {  
+  background-color: greenyellow;
+  background-image: url(/img/todo-filtered.png); 
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section#section-4 #yellow {  
+  background-color: yellow;
+  background-image: url(/img/image-gallery.png); 
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+
+/* Portfolio Styles End  */
 
 
 /* Section 5 Styles Begin */
 section#section-5 {
-  height: 1100px;
+  height: auto;
   min-height: 100vh;
   background: blue;
   background: url('/img/Crash-Landing.jpeg') no-repeat center center/cover;;
@@ -349,59 +426,36 @@ section#section-5 p.required {
 
 @media only screen and (max-width: 899px) {
   /* For tablets: */
+  section#section-1 .landing { width: 80%; margin-left: 10%; margin-right: 10%;  }
+  section#section-1 .landing h1 { margin: 10px; text-align: center; padding: 0; font-size: 2rem; }  
+  section#section-1 .landing p {    font-size: .85rem;  }
+  section#section-1 .logo { font-size: 16rem;}
+  section#section-2 { flex-direction: column;  }
+  section#section-2 .about-me-left { width: 100%; }
+  section#section-2 .about-me-left i { font-size: 12rem; padding-bottom: 80px; color: #555;}
+  section#section-2 .about-me-right { width: 100%; }
   
-  
-  section#section-2 {
-    flex-direction: column;
-  }
-  section#section-2 .about-me-left {
-    width: 100%;
-  }
-  section#section-2 .about-me-left i {
-    font-size: 12rem;
-    padding-bottom: 80px;
-    color: #555;
-  }
-  section#section-2 .about-me-right {
-    width: 100%;
-  }
-  
-  section#section-5 .contact-me {
-    margin-left: 15%;
-    margin-right: 15%;
-    width: 70%;
-  }
+  section#section-5 .contact-me { margin-left: 15%; margin-right: 15%; width: 70%;}
 
-  #navbar .nav-menu {
-    position: fixed;
-    left: -100%;
-    top: 4rem;
-    flex-direction: column;
-    background-color: #333;
-    width: 50%;
-    border-radius: 10px;
-    text-align: center;
-    transition: 0.3s;
-    box-shadow:
-        0 10px 27px rgba(0, 0, 0, 0.05);
-}
-
-  #navbar .nav-menu.active {    left: 0;}
-
-  #navbar .nav-item {    margin: 1rem 0;}
-
-  #navbar .hamburger {
-    display: block;
-    cursor: pointer;
-    font-size: 40px;
-    padding: 5px 3px 5px 15px;
-    color: orangered;
-}
+  #navbar .nav-menu { position: fixed; left: -100%; top: 4rem; flex-direction: column; background-color: #333; width: 50%; border-radius: 10px; text-align: center;  transition: 0.3s; box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05); }
+  #navbar .nav-menu.active {    left: 0; margin-left: 1rem;}
+  #navbar .nav-item {  margin: 1rem 0;}
+  #navbar .hamburger {   display: block;   cursor: pointer;   font-size: 30px;   padding: 7px 3px 7px 15px;   color: orangered;}
   #navbar .hamburger.active {  left: 0;}
+
+  section#section-4 {flex: 100%; max-width: 100%; }
+  section#section-4 .portfolio-column {flex: 100%; max-width: 100%; }
 
 }
 @media only screen and (max-width: 400px) {
   /* For Phone: */
+  #section-1 .logo {
+    display: block;
+    cursor: pointer;
+    font-size: 10rem;
+    /* padding: 7px 3px 7px 15px; */
+    color: white;
+  }
   section#section-2 .about-me-right h1 {
     color: #fff;
     font-size: 2rem;
