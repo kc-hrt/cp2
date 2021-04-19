@@ -203,18 +203,66 @@ section#section-2 .about-me-right p {
 
 /* Resumé Styles Begin */
 section#section-3 {
-  height: 100vh;
+  height: auto;
+  min-height: 100vh;
   background: yellow;
   display: flex;
   width: 100%;
   
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
-  text-align: center;
+  /* text-align: center; */
 
   /* Scroll Snap */
   scroll-snap-align: center;
+}
+
+section#section-3 .resume-left {
+  display: inline-block;
+  width: 50%;
+  text-align: left;
+  margin: 10px
+}
+section#section-3 .resume-right {
+  display: inline-block;
+  width: 50%;
+  text-align: left;
+  margin: 10px
+
+}
+section#section-3 p {
+  text-align: left;
+  margin: 0;
+  padding-left: 20px;
+  padding-top: 2px;
+  padding-bottom: 20px;
+  font-size: .85rem;
+}
+
+section#section-3 h2 {
+  padding-left: 10px;
+  color: #000;
+  
+}
+section#section-3 h3 {
+  padding-left: 12px;
+  color: #888;
+  padding-top: 5px;
+  font-size: 1.1rem;
+}
+section#section-3 #icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  text-align: center;
+  color: #555;
+  font-size: 3rem;
+  padding-bottom: 2rem;
+}
+ #green {
+  color: #45a049;
 }
 
 /* Resumé Styles End  */
@@ -476,6 +524,7 @@ section#section-5 p.required {
   padding-right: 20px;
 }
 
+#github:hover {color: #333;}
 #reddit:hover {color: #ff4500;}
 #twitter:hover {color: #55acee;}
 #you-tube:hover {color: #ff0000;}
@@ -499,7 +548,12 @@ section#section-5 p.required {
   section#section-2 .about-me-left { width: 100%; }
   section#section-2 .about-me-left i { font-size: 12rem; padding-bottom: 80px; color: #555;}
   section#section-2 .about-me-right { width: 100%; }
-  
+
+  section#section-3 { flex-direction: column;  }
+  section#section-3 .about-me-left { width: 100%; }
+  /* section#section-3 .about-me-left i { font-size: 12rem; padding-bottom: 80px; color: #555;} */
+  section#section-3 .about-me-right { width: 100%; }
+
   section#section-5 .contact-me { margin-left: 15%; margin-right: 15%; width: 70%;}
 
   #navbar .nav-menu { position: fixed; left: -100%; top: 4rem; flex-direction: column; background-color: #333; width: 50%; border-radius: 10px; text-align: center;  transition: 0.9s; box-shadow: 0 10px 27px rgba(0, 0, 0, .8); }
@@ -508,7 +562,7 @@ section#section-5 p.required {
   #navbar .hamburger {   display: block;   cursor: pointer;   font-size: 30px;   padding: 7px 3px 7px 15px;   color: orangered;}
   #navbar .hamburger.active {  left: 0;}
 
-  section#section-4 {flex: 100%; max-width: 100%; padding-bottom: margin: 3% 10px 5px 7px;}
+  section#section-4 {flex: 100%; max-width: 100%; margin: 3% 10px 5px 7px;}
   section#section-4 .portfolio-column {flex: 100%; max-width: 100%; }
   
 }
@@ -551,8 +605,10 @@ section#section-5 p.required {
   section#section-5 .contact-me p {
     font-size: .85rem;
   }
+  
+  #footer {flex-direction: column; justify-content: center; text-align: center; align-items: center;}
   #footer .footer-left {width: 100%;}
-  #footer .footer-right {width: 100%;}
+  #footer .footer-right {width: 100%; padding-top: 1.7em;}
 }
 /* responsive-ness end */
 
