@@ -246,7 +246,8 @@ section#section-4 .portfolio-row {
 
 section#section-4 .portfolio-column {
   flex: 33%;
-  max-width: 33%;
+  /* max-width: 33%; */
+  width: 200px;
   flex-direction: column;
 
 }
@@ -262,6 +263,10 @@ section#section-4 .card {
 #text {
  display: none;
 
+}
+
+section#section-4 h1 {
+  padding: 15px;
 }
 
 section#section-4 a {
@@ -282,10 +287,10 @@ section#section-4 .card:hover {
   font-weight: 900;
   /* background-color:; */
   margin-top: 50%;
-  padding: 10px 15px 10px 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   background-color: rgba(0, 0, 0, 0.8);
   justify-content: center;
-  ;
 }
 
 
@@ -331,12 +336,6 @@ section#section-4 #yellow {
   background-size: cover;
 }
 
-
-
-section#section-4 .card:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-  display: block;
-}
 
 /* Portfolio Styles End  */
 
@@ -428,17 +427,60 @@ section#section-5 p.required {
 #footer {
   height: 200px;
   background: purple;
-  display: inline-block;
+  display: flex;
   width: 100%;
 
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: center;
-  justify-content: center;
-  text-align: center;
+  /* justify-content: center; */
+  /* text-align: center; */
   
+
+
   /* Scroll Snap */
   scroll-snap-align: center;
 }
+
+#footer p {
+  color: #333;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 5px 10px 5px 10px;
+}
+
+#footer h2 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+#footer h2:hover {color: gold;}
+
+#footer i {
+  font-size: 3rem;
+  color: #fff;
+  padding: 5px;
+}
+
+#footer .footer-left {
+  display: inline-block;
+  width: 50%;
+  text-align: left;
+  justify-content: left;
+  padding-left: 20px;
+}
+
+#footer .footer-right {
+  display: inline-block;
+  width: 50%;
+  text-align: right;
+  padding-right: 20px;
+}
+
+#reddit:hover {color: #ff4500;}
+#twitter:hover {color: #55acee;}
+#you-tube:hover {color: #ff0000;}
+#email:hover {color: #45a049;}
+
 
 /* Footer Styles End  */
 
@@ -468,7 +510,7 @@ section#section-5 p.required {
 
   section#section-4 {flex: 100%; max-width: 100%; padding-bottom: margin: 3% 10px 5px 7px;}
   section#section-4 .portfolio-column {flex: 100%; max-width: 100%; }
-
+  
 }
 @media only screen and (max-width: 400px) {
   /* For Phone: */
@@ -509,7 +551,8 @@ section#section-5 p.required {
   section#section-5 .contact-me p {
     font-size: .85rem;
   }
-
+  #footer .footer-left {width: 100%;}
+  #footer .footer-right {width: 100%;}
 }
 /* responsive-ness end */
 
